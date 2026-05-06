@@ -24,7 +24,7 @@ function App() {
   });
 
   const [vault, setVault] = useState(() => {
-    const saved = localStorage.getItem('nexus_vault');
+    const saved = localStorage.getItem('scout_vault');
     return saved ? JSON.parse(saved) : [];
   });
 
@@ -104,7 +104,7 @@ function App() {
     }
     const newVault = [...vault, { ...lead, savedAt: new Date().toISOString() }];
     setVault(newVault);
-    localStorage.setItem('nexus_vault', JSON.stringify(newVault));
+    localStorage.setItem('scout_vault', JSON.stringify(newVault));
     alert('Lead secured in Vault!');
   };
 
@@ -116,7 +116,7 @@ function App() {
           <div style={{ background: 'var(--accent-primary)', width: '32px', height: '32px', borderRadius: '8px', display: 'grid', placeItems: 'center' }}>
             <Zap size={20} color="black" fill="black" />
           </div>
-          <h1 className="gradient-text" style={{ fontSize: '1.5rem', margin: 0 }}>NEXUS</h1>
+          <h1 className="gradient-text" style={{ fontSize: '1.5rem', margin: 0 }}>SCOUT</h1>
         </div>
 
         <div className="nav-items" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
