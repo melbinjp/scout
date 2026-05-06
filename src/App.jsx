@@ -140,10 +140,10 @@ function App() {
         <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px' }}>
           <div>
             <h2 style={{ fontSize: '2rem', marginBottom: '8px' }}>
-              {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} Engine
+              {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} Scout
               {leads.some(l => l.source.includes('Direct')) && <span style={{ marginLeft: '12px', fontSize: '0.8rem', color: '#ff4b2b', verticalAlign: 'middle', border: '1px solid #ff4b2b', padding: '2px 8px', borderRadius: '4px' }}>STANDALONE MODE</span>}
             </h2>
-            <p style={{ color: 'var(--text-muted)' }}>Monitoring high-intent signals across the global digital sector.</p>
+            <p style={{ color: 'var(--text-muted)' }}>Finding little gold nuggets across the web.</p>
           </div>
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
             <div 
@@ -396,7 +396,7 @@ function App() {
             >
               <div className="glass-card">
                 <h3 style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <Zap size={24} color="var(--accent-primary)" /> Intelligence Configuration
+                  <Zap size={24} color="var(--accent-primary)" /> Scout | Lead Discovery
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                   <div className="input-group">

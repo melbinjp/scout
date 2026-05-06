@@ -116,11 +116,10 @@ app.post('/api/settings', (req, res) => {
 });
 
 // Agent Accessibility Manifest
-app.get('/nexus-agent.json', (req, res) => {
+app.get('/scout-manifest.json', (req, res) => {
   res.json({
-    name: "Nexus Intent Arbitrage Engine",
-    version: "1.0.0",
-    description: "An automated lead discovery and value generation engine for Sales Intelligence.",
+    name: 'Scout',
+    description: 'Lead discovery tool for agents',
     capabilities: [
       "real_time_lead_scanning",
       "ai_intent_analysis",
@@ -128,7 +127,6 @@ app.get('/nexus-agent.json', (req, res) => {
       "leverage_vault_storage"
     ],
     endpoints: {
-      get_leads: "/api/leads",
       get_settings: "/api/settings",
       update_settings: "/api/settings",
       vault_stats: "/api/vault/stats"
